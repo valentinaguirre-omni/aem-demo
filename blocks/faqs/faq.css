@@ -1,0 +1,13 @@
+.faq details {
+  border-bottom: 1px solid #ddd;
+  padding: 16px 0;
+}
+
+.faq summary {
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.faq details > div {
+  padding-top: 12px;
+}
