@@ -1,0 +1,39 @@
+.accordion {
+  max-width: 900px;
+  margin: 40px auto;
+}
+
+.accordion details {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  overflow: hidden;
+}
+
+.accordion summary {
+  padding: 18px 24px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 600;
+  background: #f5f7fa;
+  list-style: none;
+}
+
+.accordion summary::-webkit-details-marker {
+  display: none;
+}
+
+.accordion summary::after {
+  content: '+';
+  float: right;
+  font-size: 24px;
+}
+
+.accordion details[open] summary::after {
+  content: '−';
+}
+
+.accordion .accordion-content {
+  padding: 20px 24px;
+  background: #fff;
+}
